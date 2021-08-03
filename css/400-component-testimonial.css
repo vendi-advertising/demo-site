@@ -1,0 +1,12 @@
+.testimonial-copy {
+    display: flex;
+    margin: 0 auto;
+}
+
+.testimonial-copy::before {
+    content: open-quote;
+}
+
+.testimonial-copy::after {
+    content: close-quote;
+}

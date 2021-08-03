@@ -1,0 +1,19 @@
+home-hero:
+  width: 1920
+  height: 800
+  crop: true
+  multipliers: [ 2 ]
+recipe-grid:
+  width: 500
+  height: 400
+  crop: true
+  multipliers: [ 2 ]
+#my-cool-thumbnail:
+#  width: 250
+#  height: 140
+#  crop: true
+#  multipliers: [ 2 ]
+#a-weird-crop:
+#  width: 1920
+#  height: 1281
+#  crop: [left, bottom]

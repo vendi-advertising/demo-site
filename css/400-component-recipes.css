@@ -1,0 +1,46 @@
+.component-recipes {
+    --recipe-height: 40rem;
+
+    display: grid;
+    grid-template-rows: var(--recipe-height);
+}
+
+.component-recipes .single-recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.component-recipes .single-recipe:nth-child(even) .recipe-image {
+    order: 2;
+}
+
+.component-recipes .recipe-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: var(--recipe-height);
+}
+
+.component-recipes .recipe-details {
+    padding: var(--margin-large);
+}
+
+.component-recipes .recipe-details ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.component-recipes .recipe-details ul li {
+    display: none;
+}
+
+.component-recipes .recipe-details ul > :nth-child(1),
+.component-recipes .recipe-details ul > :nth-child(2),
+.component-recipes .recipe-details ul > :nth-child(3),
+.component-recipes .recipe-details ul > :nth-child(4),
+.component-recipes .recipe-details ul > :nth-child(5),
+.component-recipes .recipe-details ul > :nth-child(6) {
+    display: grid;
+    grid-template-columns: 1fr 1em 1fr;
+}

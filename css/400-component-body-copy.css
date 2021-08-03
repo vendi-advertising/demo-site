@@ -1,0 +1,23 @@
+.body-copy {
+    gap: 2em;
+}
+
+.body-copy.column-count-2 {
+    columns: 2;
+}
+
+.body-copy.column-count-3 {
+    columns: 3;
+}
+
+.body-copy.column-count-4 {
+    columns: 4;
+}
+
+.body-copy.column-count-5 {
+    columns: 5;
+}
+
+.body-copy.column-count-6 {
+    columns: 6;
+}

@@ -1,0 +1,52 @@
+.hero-home {
+    background-color: var(--color-primary-black);
+    display: grid;
+    grid-template-areas: "same";
+    place-items: center;
+    width: 100%;
+}
+
+.hero-home > * {
+    grid-area: same;
+}
+
+.hero-home .background-image img {
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+
+.hero-home > .copy {
+    color: var(--color-primary-white);
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-home > .copy > * {
+    display: block;
+    line-height: 0.8em;
+}
+
+.hero-home > .copy > :nth-child(1) {
+    font-family: var(--font-family-cursive);
+    font-size: 20rem;
+    letter-spacing: 0.05em;
+}
+
+.hero-home > .copy > :nth-child(2) {
+    font-family: var(--font-family-body);
+    font-size: 20rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.hero-home > .copy > :nth-child(3) {
+    font-family: var(--font-family-body);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: var(--margin-normal);
+}
