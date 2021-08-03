@@ -1,4 +1,8 @@
-.component-recipes {
+.component-recipes h2 {
+    padding-bottom: var(--margin-normal);
+}
+
+.component-recipes .recipes {
     --recipe-height: 40rem;
 
     display: grid;
@@ -8,6 +12,19 @@
 .component-recipes .single-recipe {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-size: 0;
+}
+
+.component-recipes .single-recipe h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: var(--margin-medium);
+}
+
+.component-recipes .single-recipe h4 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: var(--margin-small);
 }
 
 .component-recipes .single-recipe:nth-child(even) .recipe-image {
@@ -16,9 +33,7 @@
 
 .component-recipes .recipe-image img {
     object-fit: cover;
-    height: 100%;
     width: 100%;
-    max-height: var(--recipe-height);
 }
 
 .component-recipes .recipe-details {
@@ -27,12 +42,13 @@
 
 .component-recipes .recipe-details ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 var(--margin-medium) 0;
     padding: 0;
 }
 
 .component-recipes .recipe-details ul li {
     display: none;
+    font-size: 1.6rem;
 }
 
 .component-recipes .recipe-details ul > :nth-child(1),
@@ -42,5 +58,11 @@
 .component-recipes .recipe-details ul > :nth-child(5),
 .component-recipes .recipe-details ul > :nth-child(6) {
     display: grid;
-    grid-template-columns: 1fr 1em 1fr;
+    grid-template-columns: 1fr minmax(1em, 3em) 1fr;
+}
+
+.component-recipes .recipe-details .button {
+    --button-bg-color: transparent;
+    display: inline-block;
+    padding-inline: 2em;
 }

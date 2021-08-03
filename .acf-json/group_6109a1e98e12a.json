@@ -1,30 +1,27 @@
 {
-    "key": "group_61092fbd457cb",
-    "title": "Component - Body Copy",
+    "key": "group_6109a1e98e12a",
+    "title": "Component - Recipes",
     "fields": [
         {
-            "key": "field_61099d43dac4a",
-            "label": "Headline",
-            "name": "headline",
-            "type": "text",
+            "key": "field_6109a21503314",
+            "label": "Component options",
+            "name": "",
+            "type": "tab",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "placement": "top",
+            "endpoint": 0
         },
         {
-            "key": "field_61092fedc8edd",
-            "label": "Editor mode",
-            "name": "editor_mode",
+            "key": "field_6109a1f503313",
+            "label": "Display mode",
+            "name": "display_mode",
             "type": "select",
             "instructions": "",
             "required": 1,
@@ -35,10 +32,10 @@
                 "id": ""
             },
             "choices": {
-                "textarea": "Plain text",
-                "wysiwyg": "Rich text"
+                "most-recent": "Most recent",
+                "curated": "Curated"
             },
-            "default_value": "textarea",
+            "default_value": false,
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -47,39 +44,66 @@
             "placeholder": ""
         },
         {
-            "key": "field_61093025c8ede",
-            "label": "Columns",
-            "name": "columns",
-            "type": "number",
+            "key": "field_6109a5ecb113a",
+            "label": "Header",
+            "name": "header",
+            "type": "text",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Recipes",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6109a25e03317",
+            "label": "Maximum number to show",
+            "name": "maximum_number_to_show",
+            "type": "number",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6109a1f503313",
+                        "operator": "==",
+                        "value": "most-recent"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "25",
                 "class": "",
                 "id": ""
             },
-            "default_value": 1,
+            "default_value": 3,
             "placeholder": "",
             "prepend": "",
             "append": "",
             "min": 1,
-            "max": 2,
+            "max": 10,
             "step": ""
         },
         {
-            "key": "field_61093042c8edf",
-            "label": "Body copy",
-            "name": "body_copy",
-            "type": "textarea",
+            "key": "field_6109a24303316",
+            "label": "Recipes",
+            "name": "",
+            "type": "tab",
             "instructions": "",
             "required": 0,
             "conditional_logic": [
                 [
                     {
-                        "field": "field_61092fedc8edd",
+                        "field": "field_6109a1f503313",
                         "operator": "==",
-                        "value": "textarea"
+                        "value": "curated"
                     }
                 ]
             ],
@@ -88,53 +112,37 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "placement": "top",
+            "endpoint": 0
         },
         {
-            "key": "field_6109305ec8ee0",
-            "label": "Body copy",
-            "name": "body_copy",
-            "type": "wysiwyg",
+            "key": "field_6109a22903315",
+            "label": "Recipes",
+            "name": "recipes",
+            "type": "relationship",
             "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_61092fedc8edd",
-                        "operator": "==",
-                        "value": "wysiwyg"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_61099d66dac4b",
-            "label": "Call to action",
-            "name": "call_to_action",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "post_type": [
+                "recipe"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": 1,
+            "max": "",
+            "return_format": "object"
         }
     ],
     "location": [
@@ -154,5 +162,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1628020148
+    "modified": 1628022325
 }

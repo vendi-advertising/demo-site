@@ -4,6 +4,7 @@
     grid-template-areas: "same";
     place-items: center;
     width: 100%;
+    font-size: 0;
 }
 
 .hero-home > * {
@@ -16,7 +17,6 @@
     object-fit: cover;
     opacity: 0.7;
 }
-
 
 .hero-home > .copy {
     color: var(--color-primary-white);
