@@ -8,6 +8,21 @@ recipe-grid:
   height: 400
   crop: true
   multipliers: [ 2 ]
+video-grid:
+  width: 500
+  height: 400
+  crop: true
+  multipliers: [ 2 ]
+testimonial-image:
+  width: 500
+  height: 400
+  crop: true
+  multipliers: [ 2 ]
+testimonial-person-image:
+  width: 100
+  height: 100
+  crop: true
+  multipliers: [ 2 ]
 #my-cool-thumbnail:
 #  width: 250
 #  height: 140

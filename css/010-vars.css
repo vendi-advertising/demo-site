@@ -16,7 +16,7 @@
     --font-family-cursive: 'Tangerine', cursive;
     --font-family-body: 'Work Sans', sans-serif;
 
-    --font-family-main: 'Open Sans', sans-serif;
+    --font-family-main: 'Work Sans', sans-serif;
     --bu: 1rem;
     --margin-small: var(--bu);
     --margin-medium: calc(var(--margin-small) * 2);
